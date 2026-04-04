@@ -544,8 +544,6 @@
     <applicationService serviceInterface="com.intellij.ide.plugins.marketplace.utils.MarketplaceCustomizationService"
                         serviceImplementation="com.intellij.ide.plugins.marketplace.utils.ApplicationInfoMarketplaceCustomizationService"
                         preload="true"/>
-    <applicationService serviceInterface="com.intellij.ide.ConsentOptionsProvider"
-                        serviceImplementation="com.intellij.ide.gdpr.ConsentOptionsProviderImpl"/>
     <applicationService serviceInterface="com.intellij.ide.StatisticsNotificationManager"
                         serviceImplementation="com.intellij.internal.statistic.notification.StatisticsNotificationManagerImpl"/>
 
@@ -774,10 +772,6 @@
                              treeRenderer="com.intellij.ide.plugins.PluginManagerConfigurableTreeRenderer"
                              bundle="messages.IdeBundle"
                              key="title.plugins"/>
-
-    <applicationConfigurable parentId="preferences.general" instance="com.intellij.ide.gdpr.ConsentConfigurable" id="consents"
-                             bundle="messages.IdeBundle"
-                             key="consent.configurable"/>
 
     <applicationConfigurable parentId="preferences.general" instance="com.intellij.ide.ui.text.DateTimeFormatConfigurable"
                              id="ide.date.format"

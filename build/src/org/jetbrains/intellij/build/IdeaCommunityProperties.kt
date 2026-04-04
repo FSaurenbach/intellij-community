@@ -41,7 +41,7 @@ internal suspend fun createCommunityBuildContext(
   )
 }
 
-open class IdeaCommunityProperties(private val communityHomeDir: Path) : JetBrainsProductProperties() {
+open class BaseIdeaCommunityProperties(val communityHomeDir: Path) : JetBrainsProductProperties() {
   init {
     configurePropertiesForAllEditionsOfIntelliJIdea(this)
     platformPrefix = "Idea"
